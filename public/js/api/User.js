@@ -5,7 +5,7 @@
  * */
 class User {
 
-  static url = '/user';
+  static URL = '/user';
   /**
    * Устанавливает текущего пользователя в
    * локальном хранилище.
@@ -41,7 +41,7 @@ class User {
    * */
   static fetch(callback) {
     createRequest({
-      url: this.url + '/current',
+      url: this.URL + '/current',
       method: 'GET',
       callback: (err, response) => {
         if (response && response.success) {
@@ -63,7 +63,7 @@ class User {
    * */
   static login(data, callback) {
     createRequest({
-      url: this.url + '/login',
+      url: this.URL + '/login',
       method: 'POST',
       responseType: 'json',
       data,
@@ -84,7 +84,7 @@ class User {
    * */
   static register(data, callback) {
     createRequest({
-      url: this.url + '/register',
+      url: this.URL + '/register',
       method: 'POST',
       responseType: 'json',
       data,
@@ -104,9 +104,8 @@ class User {
    * */
   static logout(callback) {
     createRequest({
-      url: this.url + '/logout',
+      url: this.URL + '/logout',
       method: 'POST',
-      data,
       callback: (err, response) => {
         if (response && response.success) {
           this.unsetCurrent();

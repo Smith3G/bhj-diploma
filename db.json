@@ -5,6 +5,12 @@
       "email": "demo@demo",
       "password": "demo",
       "id": "1"
+    },
+    {
+      "name": "pavel",
+      "email": "yapashas@mail.ru",
+      "password": "123",
+      "id": "2pqq68qul6hj4hhx"
     }
   ],
   "accounts": [
@@ -22,6 +28,16 @@
       "name": "Бизнес",
       "user_id": "1",
       "id": "3"
+    },
+    {
+      "name": "Tinkoff",
+      "user_id": "2pqq68qul6hj4hhx",
+      "id": "2pqq68qul6hj4whm"
+    },
+    {
+      "name": "сбер",
+      "user_id": "2pqq68qul6hj4hhx",
+      "id": "2pqq68qul6hj6k3a"
     }
   ],
   "transactions": [
@@ -159,6 +175,42 @@
       "sum": 300000,
       "type": "expense",
       "user_id": "1"
+    },
+    {
+      "id": "2pqq68qul6hj5gr2",
+      "type": "income",
+      "name": "ЗП",
+      "sum": 120000,
+      "account_id": "2pqq68qul6hj4whm",
+      "user_id": "2pqq68qul6hj4hhx",
+      "created_at": "2022-08-06T06:43:52.718Z"
+    },
+    {
+      "id": "2pqq68qul6hj5vhw",
+      "type": "income",
+      "name": "Перевод",
+      "sum": 11000,
+      "account_id": "2pqq68qul6hj4whm",
+      "user_id": "2pqq68qul6hj4hhx",
+      "created_at": "2022-08-06T06:44:11.828Z"
+    },
+    {
+      "id": "2pqq68qul6hj65lu",
+      "type": "expense",
+      "name": "Обучение",
+      "sum": 40000,
+      "account_id": "2pqq68qul6hj4whm",
+      "user_id": "2pqq68qul6hj4hhx",
+      "created_at": "2022-08-06T06:44:24.930Z"
+    },
+    {
+      "id": "2pqq68qul6hj6xsy",
+      "type": "income",
+      "name": "Аренда",
+      "sum": 10000,
+      "account_id": "2pqq68qul6hj6k3a",
+      "user_id": "2pqq68qul6hj4hhx",
+      "created_at": "2022-08-06T06:45:01.474Z"
     }
   ]
 }
