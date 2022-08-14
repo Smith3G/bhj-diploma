@@ -16,10 +16,10 @@ class LoginForm extends AsyncForm {
           return;
         }
         if (response && response.user) {
-          const modalRegister = App.getModal('login');
+          const modalLogin = App.getModal('login');
           App.setState('user-logged');
           this.element.reset();
-          modalRegister.close();
+          modalLogin.close();
         }
       });
   }
