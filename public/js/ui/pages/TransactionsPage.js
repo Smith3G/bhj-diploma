@@ -185,7 +185,32 @@ class TransactionsPage {
    * Формирует HTML-код транзакции (дохода или расхода).
    * item - объект с информацией о транзакции
    * */
-  getTransactionHTML(item){
+  getTransactionHTML(item){return `
+  <div class="transaction transaction_${item.type} row">
+      <div class="col-md-7 transaction__details">
+        <div class="transaction__icon">
+            <span class="fa fa-money fa-2x"></span>
+        </div>
+        <div class="transaction__info">
+            <h4 class="transaction__title">${item.name}</h4>
+            <!-- дата -->
+            <div class="transaction__date">${this.formatDate(item.created_at)}</div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="transaction__summ">
+        <!--  сумма -->
+        ${item.sum.toLocaleString()} <span class="currency">₽</span>
+        </div>
+      </div>
+      <div class="col-md-2 transaction__controls">
+          <!-- в data-id нужно поместить id -->
+          <button class="btn btn-danger transaction__remove" data-id="${item.id}">
+              <i class="fa fa-trash"></i>  
+          </button>
+      </div>
+  </div>
+`
 
   }
 
